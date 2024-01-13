@@ -51,14 +51,14 @@ class PlanetInfoActivity : AppCompatActivity() {
             sunriseTime = sunriseDeferred.await()
             sunsetTime = sunsetDeferred.await()
 
-            // If both sunrise and sunset times are available, localize and display them
+
             if (sunriseTime != null && sunsetTime != null) {
-                // Update UI with localized times
+
                 updateUIText()
             }
         }
 
-        // Set up language selection using Spinner
+
         setupLanguageSpinner()
     }
 
@@ -71,12 +71,12 @@ class PlanetInfoActivity : AppCompatActivity() {
 
         languageSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parentView: AdapterView<*>, selectedItemView: View?, position: Int, id: Long) {
-                // Update language based on the selected item
+
                 updateLanguage(position)
             }
 
             override fun onNothingSelected(parentView: AdapterView<*>) {
-                // Do nothing here
+
             }
         }
     }
@@ -90,12 +90,12 @@ class PlanetInfoActivity : AppCompatActivity() {
                 else -> Locale.getDefault()
             }
 
-            // Update the app's configuration with the new locale
+
             val configuration = Configuration(resources.configuration)
             configuration.setLocale(newLocale)
             resources.updateConfiguration(configuration, resources.displayMetrics)
 
-            // Manually update UI components with new language
+
             updateUIText()
 
         } catch (e: Exception) {
