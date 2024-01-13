@@ -32,7 +32,7 @@ This Android app, developed using Kotlin and Android Studio. The app fetches dat
 
 ## Screenshots
 
-![English](screenshot-1.png) | ![Français](screenshot-2.png) | ![中文](screenshot-3.png)
+![English](./screenshot-1.png) | ![Français](screenshot-2.png) | ![中文](screenshot-3.png)
 
 
 
