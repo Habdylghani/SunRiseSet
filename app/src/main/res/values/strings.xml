@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Sunriseset</string>
+    <string name="SunriseTime">"Sunrise Time: "</string>
+    <string name="SunsetTime">"Sunset Time: "</string>
+    <string-array name="language_options">
+        <item>🇺🇸 English</item>
+        <item>🇫🇷 Français</item>
+        <item>🇨🇳 中文</item>
+<!--  I was thinking to display the flag only but I don't thinkl it will be a good idea -->
+<!--       <item>🇺🇸</item>-->
+<!--        <item>🇫🇷</item>-->
+<!--        <item>🇨🇳</item>-->
+    </string-array>
+</resources>
